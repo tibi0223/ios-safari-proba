@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Adatkezelési tájékoztató - Nexus Klíma</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/kepek/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/kepek/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/kepek/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="description" content="A Nexus Klíma adatkezelési tájékoztatója: milyen adatokat kezelünk az ajánlatkéréskor, milyen jogalapon, meddig, kik férnek hozzá, és milyen jogok illetnek meg.">
+<link rel="preload" href="betuk/gabarito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="betuk.css?v=6a6cd55a">
+<link rel="stylesheet" href="style.css?v=7357fe94">
+
+<link rel="preload" id="silktide-consent-manager-css" href="silktide-consent-manager.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="silktide-consent-manager.css"></noscript>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('consent', 'default', {
+  'ad_storage':              'denied',
+  'analytics_storage':       'denied',
+  'ad_user_data':            'denied',
+  'ad_personalization':      'denied',
+  'functionality_storage':   'denied',
+  'personalization_storage': 'denied',
+  'security_storage':        'granted',
+  'wait_for_update':         2000
+});
+gtag('set', 'ads_data_redaction', true);
+gtag('set', 'url_passthrough', true);
+
+function nxAnalitikaVisszavon() {
+    try { if (typeof window.clarity === 'function') window.clarity('consent', false); } catch (e) {}
+    var h = location.hostname, domainek = [''];
+    if (!/^[0-9.]+$/.test(h) && h.indexOf('.') !== -1) {
+        var r = h.split('.');
+        for (var i = 0; i < r.length - 1; i++) { var d = r.slice(i).join('.'); domainek.push(d, '.' + d); }
+    }
+    var torolt = false;
+    document.cookie.split(';').forEach(function (c) {
+        var n = c.split('=')[0].trim();
+        if (!(/^_ga(_|$)/.test(n) || n === '_gid' || n === '_clck' || n === '_clsk')) return;
+        torolt = true;
+        domainek.forEach(function (d) {
+            document.cookie = n + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/' + (d ? ';domain=' + d : '');
+        });
+    });
+    if (window.nxAnalitikaIndult) { window.nxAnalitikaIndult = false; setTimeout(function () { location.reload(); }, 150); }
+    return torolt;
+}
+
+function nxElesHoszt() {
+    var h = location.hostname;
+    return h === 'nexusklima.hu' || h === 'www.nexusklima.hu';
+}
+</script>
+<script>
+(function (w, d, s, l, i) {
+    var elindult = false;
+    function inditGtm() {
+        if (typeof nxElesHoszt === 'function' && !nxElesHoszt()) return;
+        if (elindult) return;
+        elindult = true;
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    }
+    w.nxGtmIndit = function () { w.setTimeout(inditGtm, 0); };
+})(window, document, 'script', 'dataLayer', 'GTM-MV2NJ9LX');
+</script>
+<script src="silktide-consent-manager.js"></script>
+<script>
+(function () {
+    var KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid'];
+    function setCookie(n, v, d) { var t = new Date(); t.setTime(t.getTime() + d * 864e5); document.cookie = n + '=' + encodeURIComponent(v) + ';expires=' + t.toUTCString() + ';path=/;SameSite=Lax;Secure'; }
+    function delCookie(n) { document.cookie = n + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;SameSite=Lax;Secure'; }
+    var qs = new URLSearchParams(location.search), fromUrl = {}, hasUrl = false;
+    KEYS.forEach(function (k) { var v = qs.get(k); if (v) { fromUrl[k] = v.slice(0, 200); hasUrl = true; } });
+    window.nxAttrMentes = function () { if (hasUrl) setCookie('nx_attr', JSON.stringify(fromUrl), 90); };
+    window.nxAttrTorles = function () { delCookie('nx_attr'); };
+})();
+</script>
+<script>
+window.silktideConsentManager.init({
+    backdrop: { show: true },
+    icon:     { position: 'bottomLeft' },
+    prompt:   { position: 'stcm-pos-sav' },
+    consentTypes: [
+        {
+            id: 'alapvet',
+            label: 'Alapvető',
+            description: '<p>Ezek nélkül az oldal nem működik, ezért nem kapcsolhatók ki. Megjegyzik a süti-döntésedet, és védik az ajánlatkérő űrlapot az automatikus kitöltés ellen.</p>',
+            required: true,
+            onAccept: function () {}
+        },
+        {
+            id: 'analitika',
+            label: 'Analitika',
+            description: '<p>Google Analytics és Microsoft Clarity. Megmutatják, hányan jönnek, melyik lapot nézik és hol akadnak el. A Clarity a kattintásokat és a görgetést is rögzíti. Ebből javítjuk az oldalt.</p>',
+            required: false,
+            gtag: 'analytics_storage',
+            onAccept: function () {
+                window.nxAnalitikaIndult = true;
+                if (typeof window.nxGtmIndit === 'function') window.nxGtmIndit();
+                if (!nxElesHoszt()) return;
+                (function (c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+                    t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+                    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                })(window, document, 'clarity', 'script', 'wg67j0ug7y');
+            },
+            onReject: function () { nxAnalitikaVisszavon(); }
+        },
+        {
+            id: 'marketing',
+            label: 'Marketing',
+            description: '<p>Google Ads. Méri, melyik hirdetésünkből érkeztél, és ha ajánlatot kérsz, ezt az adatot is megkapjuk vele. Azt is lehetővé teszi, hogy más oldalakon a Nexus Klíma hirdetése jelenjen meg neked. A hirdetés forrását 90 napig egy sütiben (nx_attr) megjegyezzük.</p>',
+            required: false,
+            gtag: ['ad_storage', 'ad_user_data', 'ad_personalization'],
+            onAccept: function () {
+                if (typeof window.nxGtmIndit === 'function') window.nxGtmIndit();
+                if (typeof window.nxAttrMentes === 'function') window.nxAttrMentes();
+            },
+            onReject: function () { if (typeof window.nxAttrTorles === 'function') window.nxAttrTorles(); }
+        }
+    ],
+    text: {
+        prompt: {
+            description:                          '<p>Méréshez és hirdetéshez csak a hozzájárulásoddal használunk sütit: Analitika (Google Analytics, Microsoft Clarity) és Marketing (Google Ads). Ha elutasítod, az oldal ugyanúgy működik. Részletek az <a href="/adatvedelem">adatkezelési tájékoztatóban</a>.</p>',
+            acceptAllButtonText:                  'Elfogad',
+            acceptAllButtonAccessibleLabel:       'Elfogad: minden süti engedélyezése',
+            rejectNonEssentialButtonText:         'Csak a szükségesek',
+            rejectNonEssentialButtonAccessibleLabel: 'Csak a szükségesek: minden nem kötelező süti elutasítása',
+            preferencesButtonText:                'Beállítások',
+            preferencesButtonAccessibleLabel:     'Beállítások: a süti-beállítások megnyitása'
+        },
+        preferences: {
+            title:                      'Sütibeállítások kezelése',
+            description:                '<p>Itt kategóriánként döntheted el, mit engedélyezel. A beállítás az egész oldalra érvényes, és bármikor megváltoztathatod a lap alján található Süti-beállítások linkkel.</p>',
+            saveButtonText:             'Beállítások mentése',
+            saveButtonAccessibleLabel:  'Beállítások mentése'
+        }
+    }
+});
+</script>
+</head>
+<body>
+
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="fejlec">
+  <div class="burok fejlec-sor">
+    <a href="/" class="marka" aria-label="Nexus Klíma, vissza a főoldalra"><img src="kepek/logo-zolden.webp" width="204" height="98" alt="Nexus Klíma"></a>
+    <nav class="menu">
+      <a href="/klimatelepites">Telepítés</a>
+      <a href="/klimatisztitas">Tisztítás</a>
+      <a href="/arak">Árak</a>
+      <a href="/kalkulator">Kalkulátor</a>
+      <a href="/klimak">Klímák</a>
+      <a href="/tudastar/">Tudástár</a>
+      <a href="/rolunk">Rólunk</a>
+      <a href="/kapcsolat">Kapcsolat</a>
+      
+    </nav>
+    <a class="tel-gomb" href="tel:+36702742138">+36 70 274 2138</a>
+    <details class="mobil-menu">
+      <summary aria-label="Menü megnyitása"><span class="hamburger" aria-hidden="true"></span></summary>
+      <nav class="mobil-nav" aria-label="Fő menü">
+      <a href="/klimatelepites">Telepítés</a>
+      <a href="/klimatisztitas">Tisztítás</a>
+      <a href="/arak">Árak</a>
+      <a href="/kalkulator">Kalkulátor</a>
+      <a href="/klimak">Klímák</a>
+      <a href="/tudastar/">Tudástár</a>
+      <a href="/rolunk">Rólunk</a>
+      <a href="/kapcsolat">Kapcsolat</a>
+      
+      </nav>
+    </details>
+  </div>
+</header>
+
+<script>
+(function () {
+  var f = document.querySelector('.fejlec');
+  if (!f) return;
+  function beallit() {
+    var m = Math.round(f.getBoundingClientRect().height);
+    if (m > 0) document.documentElement.style.setProperty('--fejlec-m', m + 'px');
+  }
+  beallit();
+  window.addEventListener('resize', beallit);
+  window.addEventListener('orientationchange', beallit);
+  if ('ResizeObserver' in window) new ResizeObserver(beallit).observe(f);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(beallit);
+})();
+</script>
+
+
+
+<article class="cikk">
+  <div class="burok-szuk">
+    <nav class="morzsa" aria-label="Hol jársz"><a href="/">Főoldal</a> <span aria-hidden="true">/</span> Adatkezelési tájékoztató</nav>
+    <h1>Adatkezelési tájékoztató</h1>
+    <p class="cikk-bevezeto">Ez a tájékoztató azt írja le, milyen személyes adatokat kezelek a nexusklima.hu oldalon keresztül, miért, milyen jogalapon, meddig, és milyen jogok illetnek meg téged. Az (EU) 2016/679 rendelet (GDPR) és a hatályos magyar jogszabályok alapján készült.</p>
+    <p class="cikk-kozben">Hatályos: 2026. augusztus 25.</p>
+
+    <h2>1. Az adatkezelő</h2>
+    <ul class="adatlista">
+      <li><span>Név</span> Varró István Péter egyéni vállalkozó (Nexus Klíma)</li>
+      <li><span>Székhely</span> 1083 Budapest, Szigony utca 13.</li>
+      <li><span>Adószám</span> 55554932-1-33</li>
+      <li><span>Nyilvántartási szám</span> 55381831</li>
+      <li><span>F-gáz azonosító</span> 100000041489</li>
+      <li><span>E-mail</span> <a href="mailto:info@nexusklima.hu">info@nexusklima.hu</a></li>
+      <li><span>Telefon</span> <a href="tel:+36702742138">+36 70 274 2138</a></li>
+    </ul>
+    <p>Adatvédelmi tisztviselő kijelölésére nem vagyok kötelezett, ezért nem jelöltem ki. Adatvédelmi kérdésben a fenti e-mail címen fordulhatsz hozzám.</p>
+
+    <h2>2. Milyen adatokat kezelek, miért és meddig</h2>
+
+    <h3>Ajánlatkérés, kapcsolatfelvétel</h3>
+    <ul class="adatlista">
+      <li><span>Adatok</span> Vezeték- és keresztnév, telefonszám, e-mail cím, a felszerelés helye, üzenet (nem kötelező), a választott szolgáltatás</li>
+      <li><span>Jogalap</span> GDPR 6. cikk (1) b): a te kérésedre tett, szerződéskötést megelőző lépések</li>
+      <li><span>Időtartam</span> Az ajánlatadás lezárásától 2 év, ha nem jön létre szerződés</li>
+    </ul>
+
+    <h3>A méretező kalkulátor adatai</h3>
+    <ul class="adatlista">
+      <li><span>Adatok</span> Alapterület, a helyiség típusa, a ház típusa, mennyire süt be a nap, fűtésre használnád-e, a számított teljesítményigény, a javasolt gépméret és a három ajánlott gép</li>
+      <li><span>Jogalap</span> GDPR 6. cikk (1) b): ugyanannak a megkeresésnek a része</li>
+      <li><span>Időtartam</span> Az ajánlatkéréssel azonos</li>
+    </ul>
+
+    <h3>Edukációs levelek a méretező után</h3>
+    <ul class="adatlista">
+      <li><span>Adatok</span> Név, e-mail cím, telefonszám (ha megadod), a méretezőben adott válaszaid és a számított eredmény (a fenti szakasz szerint), a hozzájárulás ténye és időpontja, és az, hogy melyik levél mikor ment ki</li>
+      <li><span>Jogalap</span> GDPR 6. cikk (1) a): a méretező kapujában adott hozzájárulás</li>
+      <li><span>Időtartam</span> A hozzájárulás visszavonásáig, legfeljebb a feliratkozástól számított 1 évig, ha közben nem kérsz felmérést</li>
+    </ul>
+    <p>Aki a méretezőben megadja a nevét és az e-mail címét, e-mailben megkapja a becslést, majd a következő két hétben négy rövid levelet a klímaválasztásról. Ebből nem lesz megkeresés: telefonon nem kereslek meg, akkor sem, ha megadtad a számodat. Minden levélben van egy gomb, amivel ingyenes felmérést kérhetsz. Ha rákattintasz, azt rögzítem, és onnantól a megkeresésedre az ajánlatkérés fenti szabályai vonatkoznak. Leiratkozni bármelyik levél alján lehet, utána több levelet nem küldök.</p>
+
+    <h3>A megkeresés forrásának mérése</h3>
+    <ul class="adatlista">
+      <li><span>Adatok</span> Kampányazonosítók (utm_source, utm_medium, utm_campaign, utm_term, utm_content), a Google és a Meta hirdetésazonosítója (gclid, fbclid), a hivatkozó oldal címe</li>
+      <li><span>Jogalap</span> Az ajánlatkéréshez csatolt forrásadat: GDPR 6. cikk (1) f), jogos érdek. Az érdekem az, hogy tudjam, melyik hirdetésem hozott megkeresést, és ne fizessek a hatástalanokért. Az adatot a böngésződ az érkezéskor olvassa ki a címsorból, és csak az ajánlatkéréseddel együtt jut el hozzám. Tiltakozhatsz ellene (5. pont). A 90 napos <code>nx_attr</code> süti: GDPR 6. cikk (1) a), hozzájárulás, csak a Marketing kategória elfogadása után jön létre.</li>
+      <li><span>Időtartam</span> A süti 90 napig él, az ajánlatkéréshez csatolt adat az ügyfélkapcsolat lezárultát követő 2 évig</li>
+    </ul>
+
+    <h3>A weboldal biztonságos működtetése</h3>
+    <ul class="adatlista">
+      <li><span>Adatok</span> IP-cím, a beküldés időpontja, az automatizált kitöltés elleni védelem jelzései</li>
+      <li><span>Jogalap</span> GDPR 6. cikk (1) f): jogos érdek a rendszer biztonságos üzemeltetéséhez</li>
+      <li><span>Időtartam</span> A biztonsági célhoz szükséges idő, legfeljebb 1 év</li>
+    </ul>
+
+    <h3>Szolgáltatási levelek az ajánlatról</h3>
+    <ul class="adatlista">
+      <li><span>Adatok</span> Név, e-mail cím, az ajánlat adatai, a levél kiküldésének ténye, címzettje, tárgya és időpontja</li>
+      <li><span>Jogalap</span> GDPR 6. cikk (1) b) és f): a szerződéskötést megelőző kapcsolattartás, illetve jogos érdek a kiküldés visszakereshetőségéhez</li>
+      <li><span>Időtartam</span> Az ajánlat lezárásától 2 év</li>
+    </ul>
+
+    <h3>Tisztítási akciókról szóló értesítő</h3>
+    <ul class="adatlista">
+      <li><span>Adatok</span> Név, e-mail cím, a hozzájárulás ténye és időpontja</li>
+      <li><span>Jogalap</span> GDPR 6. cikk (1) a): kifejezett hozzájárulás</li>
+      <li><span>Időtartam</span> A hozzájárulás visszavonásáig</li>
+    </ul>
+
+    <h2>3. Sütik és mérőeszközök</h2>
+
+    <h3>3.1 Ami hozzájárulás nélkül működik</h3>
+    <p>A weboldal működéséhez szükséges technikai adatok: az űrlap védelme az automatizált kitöltés ellen, és a beküldés biztonsági naplózása. Ezek nélkül az oldal nem használható rendeltetésszerűen. Ezekhez sem hirdetési, sem statisztikai süti nem tartozik.</p>
+    <p>A főoldalon megjelenő aktuális budapesti hőmérséklet a norvég meteorológiai intézet (MET Norway, Norvégia) nyilvános időjárás-szolgáltatásából származik. Az adatot a saját szerverünk kérdezi le és tárolja tíz percig; a te böngésződ csak a mi szerverünkhöz fordul, ezért rólad (IP-cím, böngésző adatai) semmilyen adat nem jut el a MET Norway-hez. A lekérdezés sütit nem helyez el, a választ a böngésző a munkamenet idejére tárolja.</p>
+    <p>A főoldalon a szolgáltatási területet mutató térkép alaprajzát (utcák, települések, a Duna) az OpenStreetMap (OpenStreetMap Foundation, Egyesült Királyság) térképszervereiről tölti be a böngésződ, akkor, amikor a térképhez görgetsz. A letöltést a te böngésződ indítja, ezért az IP-címed eljut a szolgáltatóhoz. A szolgáltatás sütit nem helyez el, a térképlapokat a böngésző a gyorsítótárában tartja. A térkép melletti "Hol vagyok?" gomb a böngésződ helymeghatározását kéri, és csak akkor, ha a böngésző engedélykérésére igent mondasz. A helyzetedet nem küldjük el sehova és nem tároljuk; a térkép a környékedre ugrik, ami annyit jelent, hogy annak a környéknek a térképlapjait is a szolgáltatótól kéri le a böngésződ.</p>
+    <p>A Klímák lap, a géplapok, az Árak, a Klímatelepítés és a Kalkulátor lap, valamint a főoldal a gépek képeit és a friss árlistát a Supabase (Supabase Inc.) szervereiről tölti be. A lekérdezést a te böngésződ indítja, ezért az IP-címed eljut a szolgáltatóhoz. Sütit nem helyez el, és rólad más adatot nem kap.</p>
+
+    <h3>3.2 Ami csak a hozzájárulásoddal működik</h3>
+    <p>Az oldal első megnyitásakor egy süti-ablak jelenik meg. Amíg nem döntesz, egyik mérőeszköz sem helyez el sütit, és nem gyűjt rólad azonosításra alkalmas adatot. A döntésedet bármikor megváltoztathatod a lap alján található Süti-beállítások linkkel.</p>
+    <p>A Google mérőkódjai (Tag Manager, Analytics, Ads) a döntésed előtt be sem töltődnek, így addig a Google felé semmilyen jelzés nem megy. Csak akkor indulnak el, ha az Analitika vagy a Marketing kategóriát elfogadod. Ha mindkettőt elutasítod, nem töltődnek be.</p>
+    <p>A Microsoft Clarity csak az Analitika kategória elfogadása után indul el.</p>
+    <p>Két kategória van, és külön dönthetsz róluk:</p>
+
+    <h3>Analitika</h3>
+    <ul class="adatlista">
+      <li><span>Google Analytics 4</span> Google Ireland Ltd. (Írország). Látogatottsági statisztika, és annak mérése, hány megkeresés érkezik. A Google Tag Manageren keresztül töltődik be.</li>
+      <li><span>Microsoft Clarity</span> Microsoft Ireland Operations Ltd. (Írország). Használhatósági elemzés: felvétel készül arról, hogyan mozogsz az oldalon, mely részeket olvasod, hol akadsz el.</li>
+      <li><span>Megőrzés</span> A felvételek 30 napig, a megjelölt felvételek legfeljebb 13 hónapig, a hőtérképek 9 hónapig maradnak meg a szolgáltató saját szabálya szerint.</li>
+    </ul>
+
+    <h3>Marketing és hirdetés</h3>
+    <ul class="adatlista">
+      <li><span>Google Tag Manager</span> Google Ireland Ltd. (Írország). A mérőkódok kezelése. Az Analitika vagy a Marketing elfogadása után töltődik be. Ha csak az Analitikát fogadod el, a Google Ads nem kap hirdetési sütit és azonosítót.</li>
+      <li><span>Google Ads</span> Google Ireland Ltd. (Írország). A hirdetések eredményességének mérése: az ajánlatkérés elküldése és a telefonszámra kattintás.</li>
+      <li><span>Google hirdetési hálózat</span> Google Ireland Ltd. (Írország). A méréshez a Google hirdetési hálózata is betöltődik (doubleclick.net). Ez azt is lehetővé teszi, hogy más weboldalakon a Nexus Klíma hirdetése jelenjen meg neked, miután jártál itt. Ezt nevezik remarketingnek.</li>
+      <li><span>Kampánykövető süti</span> Saját süti <code>nx_attr</code> néven, 90 napig. Megjegyzi, honnan érkeztél: a kampányazonosítókat, a gclid és fbclid értéket, és a hivatkozó oldal címét. A legelsőként rögzített forrás marad meg.</li>
+      <li><span>Megőrzés</span> A Google Analytics esetében legfeljebb 14 hónap, a Google Ads esetében a szolgáltató saját szabálya szerint.</li>
+    </ul>
+    <p>Ha a marketing kategóriát később visszavonod, az <code>nx_attr</code> sütit töröljük, nem csak abbahagyjuk az írását.</p>
+    <p>Meta (Facebook) hirdetési mérést jelenleg nem használunk, az oldalon nincs Meta Pixel. Ha ez később változik, ez a tájékoztató frissül, és a mérés akkor is csak a hozzájárulásod után indulhat el. A fenti <code>fbclid</code> azonosítót azért fogadjuk, mert ha valaha Meta-hirdetésből érkezel, a hivatkozás tartalmazhatja; ettől még a Meta felé nem megy adat.</p>
+    <p class="cikk-kozben">A hozzájárulás rögzítését a Silktide Ltd. (Egyesült Királyság) süti-kezelője végzi. Ez egyetlen dolgot csinál: a böngésződ helyi tárolójában megjegyzi a döntésedet, hogy ne kérdezzünk rá minden oldalon újra. Ehhez nem süti tartozik, hanem a böngésző saját tárolója. Erre akkor is szükség van, ha mindent elutasítasz, mert enélkül nem tudnánk megjegyezni és tiszteletben tartani az elutasításodat.</p>
+
+    <h2>4. Kik férnek hozzá az adatokhoz</h2>
+    <p>Rajtam és a munkában részt vevő szerelőkön kívül az alábbi adatfeldolgozók, kizárólag a saját feladatuk ellátásához szükséges mértékben:</p>
+    <ul class="adatlista">
+      <li><span>Rackhost Zrt.</span> Tárhely és levelezőrendszer üzemeltetése (Magyarország)</li>
+      <li><span>Supabase</span> Az ügyfél-, munka- és ajánlatadatok, valamint a méretező feliratkozóinak tárolása (Európai Unió)</li>
+      <li><span>Google Ireland Ltd.</span> Levelezés, naptár, fájltárolás, és az űrlapbeküldések táblázatos biztonsági másolata (Írország)</li>
+      <li><span>Brevo (Sendinblue SAS)</span> A kimenő e-mailek kézbesítése (Franciaország)</li>
+      <li><span>Google Ireland Ltd.</span> Tag Manager, Analytics és Ads mérés, kizárólag a hozzájárulásoddal (Írország)</li>
+      <li><span>Microsoft Ireland Operations Ltd.</span> Clarity használhatósági elemzés, kizárólag a hozzájárulásoddal (Írország)</li>
+      <li><span>Silktide Ltd.</span> A süti-hozzájárulás rögzítése és megjegyzése (Egyesült Királyság)</li>
+    </ul>
+
+    <h3>A levelek megnyitását nem mérem</h3>
+    <p>Azt rögzítem, hogy melyik levél mikor, kinek és milyen tárggyal ment ki, mert enélkül egy ügyet nem lehetne visszakeresni. Azt viszont nem, hogy megnyitottad-e. A leveleimben nincs követő kép. Az ajánlat elolvasását sem követem: nyugodtan megnyithatod és átgondolhatod, a rendszer kizárólag azt rögzíti, ha az elfogadás gombra kattintasz.</p>
+
+    <h3>A szolgáltatási levelek és a reklám elkülönítése</h3>
+    <p>A saját ajánlatkérésedről szóló levelek (visszaigazolás, emlékeztető, az ajánlat kísérőlevele) a megkeresésed megválaszolásához tartoznak, ezekhez nem kell külön hozzájárulás. Reklámot, akciót vagy más termék ajánlását ezek a levelek nem tartalmaznak. Hírlevelet kizárólag a külön megadott hozzájárulás alapján küldök, amit bármikor, indokolás nélkül visszavonhatsz.</p>
+
+    <h3>Betűtípusok</h3>
+    <p>Az oldal betűtípusai a saját tárhelyről töltődnek be, nem külső szolgáltatótól. Betűtípus miatt tehát nem történik külső adatátadás.</p>
+
+    <h3>Harmadik országba történő adattovábbítás</h3>
+    <p>A fenti szolgáltatók európai egységein keresztül dolgozom. Az egyetlen kivétel a süti-kezelő, amelynek szolgáltatója az Egyesült Királyságban van; erre az Európai Bizottság megfelelőségi határozata alkalmazandó.</p>
+
+    <h2>5. A jogaid</h2>
+    <p>Bármikor kérheted:</p>
+    <ul class="tetelek">
+      <li>a hozzáférést ahhoz, hogy milyen adataidat kezelem,</li>
+      <li>a helyesbítést, ha valamelyik adatod pontatlan,</li>
+      <li>a törlést, ha az adatkezelésre már nincs jogalap,</li>
+      <li>a korlátozást, amíg egy vitatott kérdés tisztázódik,</li>
+      <li>az adathordozhatóságot, azaz az adataid géppel olvasható kiadását,</li>
+      <li>a tiltakozást a jogos érdeken alapuló adatkezelés ellen.</li>
+    </ul>
+    <p>Ha az adatkezelés a hozzájárulásodon alapul, azt bármikor, indokolás nélkül visszavonhatod. Ez nem érinti a visszavonás előtti adatkezelés jogszerűségét.</p>
+    <p>A kérésedet a fenti e-mail címen jelezheted, és legkésőbb egy hónapon belül válaszolok.</p>
+
+    <h2>6. Jogorvoslat</h2>
+    <p>Ha úgy érzed, az adatkezelés sérti a jogaidat, panaszt tehetsz a felügyeleti hatóságnál:</p>
+    <ul class="adatlista">
+      <li><span>Hatóság</span> Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)</li>
+      <li><span>Cím</span> 1055 Budapest, Falk Miksa utca 9-11.</li>
+      <li><span>E-mail</span> <a href="mailto:ugyfelszolgalat@naih.hu">ugyfelszolgalat@naih.hu</a></li>
+      <li><span>Weboldal</span> <a href="https://naih.hu" rel="noopener">naih.hu</a></li>
+    </ul>
+    <p>Bírósághoz is fordulhatsz, a lakóhelyed vagy tartózkodási helyed szerint illetékes törvényszéknél.</p>
+
+    <h2>7. A tájékoztató módosítása</h2>
+    <p>Az oldal fejlesztésével ez a tájékoztató is változhat. A mindenkori hatályos szöveg ezen az oldalon érhető el, a hatálybalépés dátumával.</p>
+
+    <div class="cikk-cta">
+      <div class="cikk-cta-szoveg">
+        <h3>Kérdésed van az adataiddal kapcsolatban?</h3>
+        <p>Írj vagy hívj, és megválaszolom.</p>
+      </div>
+      <div class="lap-gombok">
+        <a class="gomb gomb-vil" href="tel:+36702742138">+36 70 274 2138</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+
+<footer style="background:var(--zold-melo);color:rgba(245,245,245,.72);padding:var(--t4) 0 var(--t3)">
+  <div class="burok">
+    <div style="display:flex;gap:var(--t4);flex-wrap:wrap;margin-bottom:var(--t3)">
+      <div style="flex:1 1 300px">
+        <img class="lab-logo" src="kepek/logo-zolden.webp" width="204" height="98" alt="Nexus Klíma">
+        
+        <p style="font-size:15px">Klímatelepítés és tisztítás Budapesten és <a href="/#hol-dolgozunk" style="color:inherit;text-decoration:underline;text-underline-offset:4px">környékén</a>. </p>
+      </div>
+      <div style="flex:0 1 160px"><div style="font-size:13px;letter-spacing:.14em;color:rgba(245,245,245,.5);margin-bottom:var(--t2)">SZOLGÁLTATÁS</div><div style="font-size:15px;line-height:2"><a href="/klimak">Klímák</a><br><a href="/klimatelepites">Telepítés</a><br><a href="/klimatisztitas">Tisztítás</a><br></div></div>
+      <div style="flex:0 1 160px"><div style="font-size:13px;letter-spacing:.14em;color:rgba(245,245,245,.5);margin-bottom:var(--t2)">ESZKÖZÖK</div><div style="font-size:15px;line-height:2"><a href="/kalkulator">Kalkulátor</a><br><a href="/tudastar/">Tudástár</a><br><a href="/galeria">Galéria</a></div></div>
+      <div style="flex:0 1 160px"><div style="font-size:13px;letter-spacing:.14em;color:rgba(245,245,245,.5);margin-bottom:var(--t2)">JOGI</div><div style="font-size:15px;line-height:2"><a href="/impresszum">Impresszum</a><br><a href="/adatvedelem">Adatvédelem</a><br><button type="button" class="lablec-gomb" data-suti-beallitasok>Süti-beállítások</button></div></div>
+    </div>
+    <div style="border-top:1px solid rgba(245,245,245,.12);padding-top:var(--t3);display:flex;gap:var(--t3);justify-content:space-between;flex-wrap:wrap;font-size:14px">
+      
+      <span><a href="tel:+36702742138">+36 70 274 2138</a> · <a href="mailto:info@nexusklima.hu">info@nexusklima.hu</a> · <a href="https://g.page/r/CblltfJZY_lDEBQ" rel="noopener">Google cégprofil</a></span>
+      <span>Varró István Péter e.v. · adószám: 55554932-1-33 · 2026</span>
+    </div>
+  </div>
+</footer>
+
+<a class="hivo-gomb" href="tel:+36702742138" data-hivo-gomb data-cta-forras="lebego-gomb" aria-label="Hívás most: +36 70 274 2138">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.1 3.4H5a2 2 0 0 0-2 2.2C3.6 14 10 20.4 18.4 21a2 2 0 0 0 2.2-2v-3.1l-4.4-1.4-1.9 2.4a13.4 13.4 0 0 1-6.2-6.2l2.4-1.9Z"></path></svg>
+<span>Hívás</span>
+</a>
+
+<script src="analitika.js?v=116e9973"></script>
+
+</body></html>

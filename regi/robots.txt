@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /php/
+Disallow: /*.php
+Disallow: /admin/
+
+Sitemap: https://nexusklima.hu/sitemap.xml

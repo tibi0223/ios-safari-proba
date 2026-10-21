@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Galéria - Nexus Klíma, Budapest</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/kepek/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/kepek/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/kepek/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="description" content="Saját munkafotók klímatelepítésekről Budapesten és környékén, ahogy készültek. Nem katalógusfotó.">
+<link rel="preload" href="betuk/gabarito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="betuk.css?v=6a6cd55a">
+<link rel="stylesheet" href="style.css?v=7357fe94">
+
+<link rel="canonical" href="https://nexusklima.hu/galeria">
+<meta property="og:site_name" content="Nexus Klíma">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nexusklima.hu/galeria">
+<meta property="og:title" content="Galéria - Nexus Klíma, Budapest">
+<meta property="og:description" content="Saját munkafotók klímatelepítésekről Budapesten és környékén, ahogy készültek. Nem katalógusfotó.">
+<meta property="og:image" content="https://nexusklima.hu/kepek/hero-nyar.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Főoldal","item":"https://nexusklima.hu/"},{"@type":"ListItem","position":2,"name":"Galéria","item":"https://nexusklima.hu/galeria"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Galéria – Nexus Klíma, Budapest","description":"Saját munkafotók klímatelepítésekről Budapesten és környékén, ahogy készültek. Nem katalógusfotó.","url":"https://nexusklima.hu/galeria"}</script>
+<link rel="preload" id="silktide-consent-manager-css" href="silktide-consent-manager.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="silktide-consent-manager.css"></noscript>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('consent', 'default', {
+  'ad_storage':              'denied',
+  'analytics_storage':       'denied',
+  'ad_user_data':            'denied',
+  'ad_personalization':      'denied',
+  'functionality_storage':   'denied',
+  'personalization_storage': 'denied',
+  'security_storage':        'granted',
+  'wait_for_update':         2000
+});
+gtag('set', 'ads_data_redaction', true);
+gtag('set', 'url_passthrough', true);
+
+function nxAnalitikaVisszavon() {
+    try { if (typeof window.clarity === 'function') window.clarity('consent', false); } catch (e) {}
+    var h = location.hostname, domainek = [''];
+    if (!/^[0-9.]+$/.test(h) && h.indexOf('.') !== -1) {
+        var r = h.split('.');
+        for (var i = 0; i < r.length - 1; i++) { var d = r.slice(i).join('.'); domainek.push(d, '.' + d); }
+    }
+    var torolt = false;
+    document.cookie.split(';').forEach(function (c) {
+        var n = c.split('=')[0].trim();
+        if (!(/^_ga(_|$)/.test(n) || n === '_gid' || n === '_clck' || n === '_clsk')) return;
+        torolt = true;
+        domainek.forEach(function (d) {
+            document.cookie = n + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/' + (d ? ';domain=' + d : '');
+        });
+    });
+    if (window.nxAnalitikaIndult) { window.nxAnalitikaIndult = false; setTimeout(function () { location.reload(); }, 150); }
+    return torolt;
+}
+
+function nxElesHoszt() {
+    var h = location.hostname;
+    return h === 'nexusklima.hu' || h === 'www.nexusklima.hu';
+}
+</script>
+<script>
+(function (w, d, s, l, i) {
+    var elindult = false;
+    function inditGtm() {
+        if (typeof nxElesHoszt === 'function' && !nxElesHoszt()) return;
+        if (elindult) return;
+        elindult = true;
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    }
+    w.nxGtmIndit = function () { w.setTimeout(inditGtm, 0); };
+})(window, document, 'script', 'dataLayer', 'GTM-MV2NJ9LX');
+</script>
+<script src="silktide-consent-manager.js"></script>
+<script>
+(function () {
+    var KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid'];
+    function setCookie(n, v, d) { var t = new Date(); t.setTime(t.getTime() + d * 864e5); document.cookie = n + '=' + encodeURIComponent(v) + ';expires=' + t.toUTCString() + ';path=/;SameSite=Lax;Secure'; }
+    function delCookie(n) { document.cookie = n + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;SameSite=Lax;Secure'; }
+    var qs = new URLSearchParams(location.search), fromUrl = {}, hasUrl = false;
+    KEYS.forEach(function (k) { var v = qs.get(k); if (v) { fromUrl[k] = v.slice(0, 200); hasUrl = true; } });
+    window.nxAttrMentes = function () { if (hasUrl) setCookie('nx_attr', JSON.stringify(fromUrl), 90); };
+    window.nxAttrTorles = function () { delCookie('nx_attr'); };
+})();
+</script>
+<script>
+window.silktideConsentManager.init({
+    backdrop: { show: true },
+    icon:     { position: 'bottomLeft' },
+    prompt:   { position: 'stcm-pos-sav' },
+    consentTypes: [
+        {
+            id: 'alapvet',
+            label: 'Alapvető',
+            description: '<p>Ezek nélkül az oldal nem működik, ezért nem kapcsolhatók ki. Megjegyzik a süti-döntésedet, és védik az ajánlatkérő űrlapot az automatikus kitöltés ellen.</p>',
+            required: true,
+            onAccept: function () {}
+        },
+        {
+            id: 'analitika',
+            label: 'Analitika',
+            description: '<p>Google Analytics és Microsoft Clarity. Megmutatják, hányan jönnek, melyik lapot nézik és hol akadnak el. A Clarity a kattintásokat és a görgetést is rögzíti. Ebből javítjuk az oldalt.</p>',
+            required: false,
+            gtag: 'analytics_storage',
+            onAccept: function () {
+                window.nxAnalitikaIndult = true;
+                if (typeof window.nxGtmIndit === 'function') window.nxGtmIndit();
+                if (!nxElesHoszt()) return;
+                (function (c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+                    t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+                    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                })(window, document, 'clarity', 'script', 'wg67j0ug7y');
+            },
+            onReject: function () { nxAnalitikaVisszavon(); }
+        },
+        {
+            id: 'marketing',
+            label: 'Marketing',
+            description: '<p>Google Ads. Méri, melyik hirdetésünkből érkeztél, és ha ajánlatot kérsz, ezt az adatot is megkapjuk vele. Azt is lehetővé teszi, hogy más oldalakon a Nexus Klíma hirdetése jelenjen meg neked. A hirdetés forrását 90 napig egy sütiben (nx_attr) megjegyezzük.</p>',
+            required: false,
+            gtag: ['ad_storage', 'ad_user_data', 'ad_personalization'],
+            onAccept: function () {
+                if (typeof window.nxGtmIndit === 'function') window.nxGtmIndit();
+                if (typeof window.nxAttrMentes === 'function') window.nxAttrMentes();
+            },
+            onReject: function () { if (typeof window.nxAttrTorles === 'function') window.nxAttrTorles(); }
+        }
+    ],
+    text: {
+        prompt: {
+            description:                          '<p>Méréshez és hirdetéshez csak a hozzájárulásoddal használunk sütit: Analitika (Google Analytics, Microsoft Clarity) és Marketing (Google Ads). Ha elutasítod, az oldal ugyanúgy működik. Részletek az <a href="/adatvedelem">adatkezelési tájékoztatóban</a>.</p>',
+            acceptAllButtonText:                  'Elfogad',
+            acceptAllButtonAccessibleLabel:       'Elfogad: minden süti engedélyezése',
+            rejectNonEssentialButtonText:         'Csak a szükségesek',
+            rejectNonEssentialButtonAccessibleLabel: 'Csak a szükségesek: minden nem kötelező süti elutasítása',
+            preferencesButtonText:                'Beállítások',
+            preferencesButtonAccessibleLabel:     'Beállítások: a süti-beállítások megnyitása'
+        },
+        preferences: {
+            title:                      'Sütibeállítások kezelése',
+            description:                '<p>Itt kategóriánként döntheted el, mit engedélyezel. A beállítás az egész oldalra érvényes, és bármikor megváltoztathatod a lap alján található Süti-beállítások linkkel.</p>',
+            saveButtonText:             'Beállítások mentése',
+            saveButtonAccessibleLabel:  'Beállítások mentése'
+        }
+    }
+});
+</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<symbol id="ik-klima" viewBox="0 0 24 24">
+  <path d="M18 17.5a2.5 2.5 0 1 1-4 2.03V12" vector-effect="non-scaling-stroke"/>
+  <path d="M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" vector-effect="non-scaling-stroke"/>
+  <path d="M6 8h12" vector-effect="non-scaling-stroke"/>
+  <path d="M6.6 15.572A2 2 0 1 0 10 17v-5" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-mosozsak" viewBox="0 0 24 24">
+  <path d="m4 4 2.5 2.5" vector-effect="non-scaling-stroke"/>
+  <path d="M13.5 6.5a4.95 4.95 0 0 0-7 7" vector-effect="non-scaling-stroke"/>
+  <path d="M15 5 5 15" vector-effect="non-scaling-stroke"/>
+  <path d="M14 17v.01" vector-effect="non-scaling-stroke"/>
+  <path d="M10 16v.01" vector-effect="non-scaling-stroke"/>
+  <path d="M13 13v.01" vector-effect="non-scaling-stroke"/>
+  <path d="M16 10v.01" vector-effect="non-scaling-stroke"/>
+  <path d="M11 20v.01" vector-effect="non-scaling-stroke"/>
+  <path d="M17 14v.01" vector-effect="non-scaling-stroke"/>
+  <path d="M20 11v.01" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-homero" viewBox="0 0 24 24">
+  <path d="M14 13.4V5.6a2 2 0 0 0-4 0v7.8a4.3 4.3 0 1 0 4 0Z" vector-effect="non-scaling-stroke"/>
+  <path d="M16.2 7.6h2.2M16.2 10.4h2.2" vector-effect="non-scaling-stroke"/>
+  <circle class="ik-k" cx="12" cy="17.3" r="1.9" fill="var(--ik-k)" stroke="none"/>
+</symbol>
+<symbol id="ik-naptar" viewBox="0 0 24 24">
+  <rect x="3" y="5" width="18" height="16" rx="2" vector-effect="non-scaling-stroke"/>
+  <path d="M3 9.6h18M8 3v4M16 3v4" vector-effect="non-scaling-stroke"/>
+  <circle class="ik-k" cx="12" cy="15.2" r="1.7" fill="var(--ik-k)" stroke="none"/>
+</symbol>
+<symbol id="ik-garancia" viewBox="0 0 24 24">
+  <path d="M12 2.6 20 5.6v5.9c0 4.5-3.3 8.4-8 9.6-4.7-1.2-8-5.1-8-9.6V5.6Z" vector-effect="non-scaling-stroke"/>
+  <path class="ik-k" stroke="var(--ik-k)" d="m8.4 11.9 2.6 2.6 4.6-5.1" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-telefon" viewBox="0 0 24 24">
+  <path d="M8.1 3.4H5a2 2 0 0 0-2 2.2C3.6 14 10 20.4 18.4 21a2 2 0 0 0 2.2-2v-3.1l-4.4-1.4-1.9 2.4a13.4 13.4 0 0 1-6.2-6.2l2.4-1.9Z" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-szamla" viewBox="0 0 24 24">
+  <path d="M5 2.6h14v18.8l-2.3-1.6-2.4 1.6-2.3-1.6-2.4 1.6L7.3 20 5 21.4Z" vector-effect="non-scaling-stroke"/>
+  <path d="M8.6 8h6.8M8.6 11.6h6.8" vector-effect="non-scaling-stroke"/>
+  <path class="ik-k" stroke="var(--ik-k)" d="M15.4 14.6v3.6m0 0-1.6-1.6m1.6 1.6 1.6-1.6" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-tarsashaz" viewBox="0 0 24 24">
+  <path d="M4 21V6.6L12 3l8 3.6V21" vector-effect="non-scaling-stroke"/>
+  <path d="M8.4 9.8h2.2M13.4 9.8h2.2M8.4 13.6h2.2" vector-effect="non-scaling-stroke"/>
+  <rect class="ik-k" stroke="var(--ik-k)" x="13" y="16.6" width="4.6" height="2.6" rx="0.7" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-level" viewBox="0 0 24 24">
+  <rect x="2.4" y="4.8" width="19.2" height="14.4" rx="2" vector-effect="non-scaling-stroke"/>
+  <path class="ik-k" stroke="var(--ik-k)" d="m3.6 6.4 8.4 6.4 8.4-6.4" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-pipa" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="9" vector-effect="non-scaling-stroke"/>
+  <path class="ik-k" stroke="var(--ik-k)" d="m8 12.2 2.6 2.6L16 8.8" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-szereles" viewBox="0 0 24 24">
+  <path d="M20 5.4a4.6 4.6 0 0 1-6.2 6.2L6.4 19a2.2 2.2 0 0 1-3.1-3.1l7.4-7.4A4.6 4.6 0 0 1 16.9 2.3l-2.8 2.8.8 2.9 2.9.8Z" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-levego" viewBox="0 0 24 24">
+  <path d="M3 8.4h9.4a2.6 2.6 0 1 0-2.6-2.6" vector-effect="non-scaling-stroke"/>
+  <path class="ik-k" stroke="var(--ik-k)" d="M3 12.4h12.8a2.8 2.8 0 1 1-2.8 2.8" vector-effect="non-scaling-stroke"/>
+  <path d="M3 16.6h7.4a2.4 2.4 0 1 1-2.4 2.4" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-villam" viewBox="0 0 24 24">
+  <path d="M13.2 2.6 6.2 13.6h4.9L9.9 21.4l7.9-11.2h-4.9Z" vector-effect="non-scaling-stroke"/>
+  <circle class="ik-k" cx="9.9" cy="21.4" r="1.5" fill="var(--ik-k)" stroke="none"/>
+</symbol>
+<symbol id="ik-jel" viewBox="0 0 24 24">
+  <path d="M12 3v18" vector-effect="non-scaling-stroke"/>
+  <path class="ik-k" stroke="var(--ik-k)" d="M4.4 7.6 19.6 16.4M19.6 7.6 4.4 16.4" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-kerdes" viewBox="0 0 24 24">
+  <path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" vector-effect="non-scaling-stroke"/>
+  <path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" vector-effect="non-scaling-stroke"/>
+</symbol>
+<symbol id="ik-csillam" viewBox="0 0 24 24">
+  <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" vector-effect="non-scaling-stroke"/>
+  <path d="M20 2v4" vector-effect="non-scaling-stroke"/>
+  <path d="M22 4h-4" vector-effect="non-scaling-stroke"/>
+  <circle cx="4" cy="20" r="2" vector-effect="non-scaling-stroke"/>
+</symbol>
+</svg>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="fejlec">
+  <div class="burok fejlec-sor">
+    <a href="/" class="marka" aria-label="Nexus Klíma, vissza a főoldalra"><img src="kepek/logo-zolden.webp" width="204" height="98" alt="Nexus Klíma"></a>
+    <nav class="menu">
+      <a href="/klimatelepites">Telepítés</a>
+      <a href="/klimatisztitas">Tisztítás</a>
+      <a href="/arak">Árak</a>
+      <a href="/kalkulator">Kalkulátor</a>
+      <a href="/klimak">Klímák</a>
+      <a href="/tudastar/">Tudástár</a>
+      <a href="/rolunk">Rólunk</a>
+      <a href="/kapcsolat">Kapcsolat</a>
+      
+    </nav>
+    <a class="tel-gomb" href="tel:+36702742138">+36 70 274 2138</a>
+    <details class="mobil-menu">
+      <summary aria-label="Menü megnyitása"><span class="hamburger" aria-hidden="true"></span></summary>
+      <nav class="mobil-nav" aria-label="Fő menü">
+      <a href="/klimatelepites">Telepítés</a>
+      <a href="/klimatisztitas">Tisztítás</a>
+      <a href="/arak">Árak</a>
+      <a href="/kalkulator">Kalkulátor</a>
+      <a href="/klimak">Klímák</a>
+      <a href="/tudastar/">Tudástár</a>
+      <a href="/rolunk">Rólunk</a>
+      <a href="/kapcsolat">Kapcsolat</a>
+      
+      </nav>
+    </details>
+  </div>
+</header>
+
+<script>
+(function () {
+  var f = document.querySelector('.fejlec');
+  if (!f) return;
+  function beallit() {
+    var m = Math.round(f.getBoundingClientRect().height);
+    if (m > 0) document.documentElement.style.setProperty('--fejlec-m', m + 'px');
+  }
+  beallit();
+  window.addEventListener('resize', beallit);
+  window.addEventListener('orientationchange', beallit);
+  if ('ResizeObserver' in window) new ResizeObserver(beallit).observe(f);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(beallit);
+})();
+</script>
+
+
+
+<section class="lap-fej">
+  <div class="burok">
+    <nav class="morzsa" aria-label="Hol jársz"><a href="/">Főoldal</a> <span aria-hidden="true">/</span> Galéria</nav>
+    <h1>Galéria</h1>
+    <p class="kiemelt" style="font-size:clamp(19px,2vw,23px);color:var(--szoveg);margin-top:var(--t3);max-width:var(--sor-kiemelt)">
+      Saját munkáink, ahogy készültek. Nem katalógusfotó.</p>
+  </div>
+</section>
+
+<section class="szakasz-also">
+  <div class="burok">
+    
+    <ul class="galeria-racs uszo">
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-16-nagy.webp"><img src="kepek/munkak/work-16.webp" width="560" height="316" alt="Két szerelő céges piros pólóban emeli a helyére a kültéri egységet a falikonzolra, egy régi ház homlokzatán" fetchpriority="high" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-17-nagy.webp"><img src="kepek/munkak/work-17.webp" width="560" height="316" alt="Szerelő kinyitja a beltéri egység előlapját, a szűrők szabadon láthatók" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-12-nagy.webp"><img src="kepek/munkak/work-12.webp" width="560" height="316" alt="Szerelő piros pólóban, porelszívós fúróval készíti a falátvezetést; a kész furat mellette látszik" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-8-nagy.webp"><img src="kepek/munkak/work-8.webp" width="560" height="420" alt="Két kültéri egység egymás mellett, konzolon a kerti falnál, a beüzemelő mérőórák még rájuk kötve" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-2-nagy.webp"><img src="kepek/munkak/work-2.webp" width="560" height="746" alt="Szerelő létrán ülve, hevederben biztosítva szereli a kültéri egységet a homlokzati konzolon" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-13-nagy.webp"><img src="kepek/munkak/work-13.webp" width="560" height="316" alt="Szerszámtáska és kiterített szerszámok a munkaterületet védő takaráson" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-5-nagy.webp"><img src="kepek/munkak/work-5.webp" width="560" height="746" alt="Digitális nyomásmérő a felszerelt kültéri egységen, mellette a szerelő szerszámai" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-4-nagy.webp"><img src="kepek/munkak/work-4.webp" width="560" height="750" alt="Két kültéri egység egymás alatt a falon, a szerelő létrán állva dolgozik rajtuk" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-7-nagy.webp"><img src="kepek/munkak/work-7.webp" width="560" height="420" alt="Kültéri egység betonfalon, a hűtőköri csövek rendezett, függőleges nyomvonalban futnak le" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-1-nagy.webp"><img src="kepek/munkak/work-1.webp" width="560" height="742" alt="Hűtőköri csövek falba vésett nyomvonalban az erkélyajtó fölött, szerelés közben" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-10-nagy.webp"><img src="kepek/munkak/work-10.webp" width="560" height="992" alt="Létra a felszerelt kültéri egység alatt, a beüzemelő mérőórák még a gépre kötve" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-9-nagy.webp"><img src="kepek/munkak/work-9.webp" width="560" height="420" alt="Kültéri egység családi ház falán, közvetlenül az eresz alatt" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-15-nagy.webp"><img src="kepek/munkak/work-15.webp" width="560" height="316" alt="Kültéri egység a beépítés előtt az udvaron, a háttérben a szerelő a nyílászárót takarja le" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-3-nagy.webp"><img src="kepek/munkak/work-3.webp" width="560" height="420" alt="Felszerelt beltéri egység, mellette a mennyezet mentén futó csövek" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-14-nagy.webp"><img src="kepek/munkak/work-14.webp" width="560" height="316" alt="Felszerelt beltéri egység világoskék falú szobában" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-6-nagy.webp"><img src="kepek/munkak/work-6.webp" width="560" height="420" alt="Beltéri egység az ajtó fölé szerelve, világos szobában" loading="lazy" decoding="async"></a></li>
+      <li><a class="galeria-nagyit" href="kepek/munkak/work-11-nagy.webp"><img src="kepek/munkak/work-11.webp" width="560" height="416" alt="Beltéri egység egy frissen épült, üres helyiség falán" loading="lazy" decoding="async"></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="szakasz">
+  <div class="burok">
+    <div class="szemoldok">Tudástár</div>
+    <h2 style="margin-bottom:var(--t3)">Amit a munkáinkról tudni érdemes</h2>
+    <div class="racs h3">
+      <a class="kartya" href="/tudastar/panellakasba-klima"><div class="kartya-fej"><svg class="ik" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#ik-tarsashaz"></use></svg><span class="kartya-cimke">PANEL</span></div><h3>Panellakásba lehet klímát szerelni?</h3><p style="color:var(--szoveg);font-size:16px;margin-top:8px">Lehet-e panelbe klímát szerelni, hol fut a vasalat a falban, mit kér a ház.</p><span class="kartya-nyil" aria-hidden="true"></span></a>
+      <a class="kartya" href="/tudastar/klima-tarsashazban-engedely"><div class="kartya-fej"><svg class="ik" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#ik-pipa"></use></svg><span class="kartya-cimke">TÁRSASHÁZ</span></div><h3>Kell-e engedély a klímához?</h3><p style="color:var(--szoveg);font-size:16px;margin-top:8px">Mit mond a törvény, mit a közös képviselő.</p><span class="kartya-nyil" aria-hidden="true"></span></a>
+      <a class="kartya" href="/tudastar/mikor-erdemes-klimat-szereltetni"><div class="kartya-fej"><svg class="ik" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#ik-naptar"></use></svg><span class="kartya-cimke">IDŐZÍTÉS</span></div><h3>Mikor érdemes szereltetni?</h3><p style="color:var(--szoveg);font-size:16px;margin-top:8px">Miért a legrosszabb ötlet a hőségriadó napján telefonálni.</p><span class="kartya-nyil" aria-hidden="true"></span></a>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="sotet szakasz">
+  <div class="burok" style="display:flex;gap:var(--t4);align-items:center;justify-content:space-between;flex-wrap:wrap">
+    <div class="zaro-szoveg">
+      <h2>Ezek a mi munkáink.<br>A tiéd legyen a következő.</h2>
+      <p class="kiemelt" style="font-size:20px;opacity:.8;margin-top:var(--t2);max-width:var(--sor-kiemelt)">Ingyenes kiszállás, három év garancia.</p>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a class="gomb gomb-fo" href="/kalkulator">Kiszámolom, mekkora kell</a>
+      <a class="gomb gomb-vil" href="tel:+36702742138">+36 70 274 2138</a>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer style="background:var(--zold-melo);color:rgba(245,245,245,.72);padding:var(--t4) 0 var(--t3)">
+  <div class="burok">
+    <div style="display:flex;gap:var(--t4);flex-wrap:wrap;margin-bottom:var(--t3)">
+      <div style="flex:1 1 300px">
+        <img class="lab-logo" src="kepek/logo-zolden.webp" width="204" height="98" alt="Nexus Klíma">
+        
+        <p style="font-size:15px">Klímatelepítés és tisztítás Budapesten és <a href="/#hol-dolgozunk" style="color:inherit;text-decoration:underline;text-underline-offset:4px">környékén</a>. </p>
+      </div>
+      <div style="flex:0 1 160px"><div style="font-size:13px;letter-spacing:.14em;color:rgba(245,245,245,.5);margin-bottom:var(--t2)">SZOLGÁLTATÁS</div><div style="font-size:15px;line-height:2"><a href="/klimak">Klímák</a><br><a href="/klimatelepites">Telepítés</a><br><a href="/klimatisztitas">Tisztítás</a><br></div></div>
+      <div style="flex:0 1 160px"><div style="font-size:13px;letter-spacing:.14em;color:rgba(245,245,245,.5);margin-bottom:var(--t2)">ESZKÖZÖK</div><div style="font-size:15px;line-height:2"><a href="/kalkulator">Kalkulátor</a><br><a href="/tudastar/">Tudástár</a><br><a href="/galeria">Galéria</a></div></div>
+      <div style="flex:0 1 160px"><div style="font-size:13px;letter-spacing:.14em;color:rgba(245,245,245,.5);margin-bottom:var(--t2)">JOGI</div><div style="font-size:15px;line-height:2"><a href="/impresszum">Impresszum</a><br><a href="/adatvedelem">Adatvédelem</a><br><button type="button" class="lablec-gomb" data-suti-beallitasok>Süti-beállítások</button></div></div>
+    </div>
+    <div style="border-top:1px solid rgba(245,245,245,.12);padding-top:var(--t3);display:flex;gap:var(--t3);justify-content:space-between;flex-wrap:wrap;font-size:14px">
+      
+      <span><a href="tel:+36702742138">+36 70 274 2138</a> · <a href="mailto:info@nexusklima.hu">info@nexusklima.hu</a> · <a href="https://g.page/r/CblltfJZY_lDEBQ" rel="noopener">Google cégprofil</a></span>
+      <span>Varró István Péter e.v. · adószám: 55554932-1-33 · 2026</span>
+    </div>
+  </div>
+</footer>
+<dialog class="galeria-nagy" id="nagyito" aria-label="Kép nagy nézetben">
+  <button type="button" class="galeria-bezar">Bezárás</button>
+  <img id="nagyito-kep" alt="">
+</dialog>
+
+<script>
+(function(){
+  var m = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (m || !('IntersectionObserver' in window)) {
+    document.querySelectorAll('.uszo').forEach(function(e){ e.classList.add('bent'); });
+    return;
+  }
+  var figyelo = new IntersectionObserver(function(be, f){
+    be.forEach(function(b){ if (b.isIntersecting) { b.target.classList.add('bent'); f.unobserve(b.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.uszo').forEach(function(e){ figyelo.observe(e); });
+})();
+</script>
+<script>
+(function(){
+  var d = document.getElementById('nagyito');
+  if (!d || typeof d.showModal !== 'function') return;
+  var nk = document.getElementById('nagyito-kep');
+  document.querySelectorAll('.galeria-nagyit').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var kis = a.querySelector('img');
+      nk.src = a.getAttribute('href');
+      nk.alt = kis ? kis.alt : '';
+      d.showModal();
+    });
+  });
+  d.addEventListener('click', function(e){ if (e.target === d) d.close(); });
+  d.querySelector('.galeria-bezar').addEventListener('click', function(){ d.close(); });
+})();
+</script>
+
+<a class="hivo-gomb" href="tel:+36702742138" data-hivo-gomb data-cta-forras="lebego-gomb" aria-label="Hívás most: +36 70 274 2138">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.1 3.4H5a2 2 0 0 0-2 2.2C3.6 14 10 20.4 18.4 21a2 2 0 0 0 2.2-2v-3.1l-4.4-1.4-1.9 2.4a13.4 13.4 0 0 1-6.2-6.2l2.4-1.9Z"></path></svg>
+<span>Hívás</span>
+</a>
+
+<script src="analitika.js?v=116e9973"></script>
+
+</body></html>

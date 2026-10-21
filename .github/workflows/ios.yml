@@ -1,0 +1,19 @@
+name: ios-safari
+on:
+  workflow_dispatch:
+    inputs:
+      ujratoltes:
+        description: reloads per variant
+        default: "12"
+jobs:
+  proba:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash proba.sh "${{ github.event.inputs.ujratoltes || '12' }}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eredmeny
+          path: ki/
