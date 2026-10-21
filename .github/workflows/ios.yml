@@ -8,10 +8,11 @@ on:
 jobs:
   proba:
     runs-on: macos-15
-    timeout-minutes: 45
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
-      - run: bash proba.sh "${{ github.event.inputs.ujratoltes || '12' }}"
+      - run: pip3 install --break-system-packages selenium==4.27.1 || pip3 install selenium==4.27.1
+      - run: bash proba2.sh "${{ github.event.inputs.ujratoltes || '12' }}"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
